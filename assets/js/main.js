@@ -4,6 +4,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* I added*/
+function readMore(city) {
+    let dots = document.querySelector(`.card[data-city="${city}"] .dots`);
+    let moreText = document.querySelector(`.card[data-city="${city}"] .more`); 
+    let btnText = document.querySelector(`.card[data-city="${city}"] .myBtn`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Abstract";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "-"; 
+        moreText.style.display = "inline";
+    }
+}
+/*end i added*/
+ 
 (function($) {
 
 	"use strict";
