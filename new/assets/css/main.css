@@ -18,7 +18,7 @@
 		vertical-align: baseline;
 	}
 	#myBtn {
-		display: inline-block;
+		display: none;
 		position: fixed;
 		bottom: 30px;
 		right: 30px;
@@ -29,7 +29,7 @@
 		background-color: #4e4949;
 		color: white;
 		cursor: pointer;
-		padding: 1px,1px;
+		padding: 6px;
 		border-radius: 4px;
 	  }
 	  
