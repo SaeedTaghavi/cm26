@@ -210,9 +210,24 @@
                         <div class="row uniform speakers organizers">
 
                             <div class="3u 3u(medium) 4u(small)">
-                                <span class="image"><img src="images/doostmohammadi.jpg" alt ></span>
+                                <span class="image" style="cursor:pointer" onclick="document.getElementById('id01').style.display='block'"><img src="images/doostmohammadi.jpg" alt ></span>
                                 <h4><a href=""> Amin Doostmohammadi</a></h4>
                                 <p>University of Copenhagen</p>
+                                <!-- <button onclick="document.getElementById('id01').style.display='block'">abstract</button> -->
+                                <!-- <button onclick="document.getElementById('id02').style.display='block'">Open Video 2</button> -->
+                                <div id="id01" class="modal" onclick="off()">
+                                    <div class="modal-content">
+                                        <div class="container">
+                                            <span onclick="document.getElementById('id01').style.display='none'" class="closebtn">&times;</span>
+                                            <div class="container">
+                                                <strong style="color: black;">Title:  </strong> here comes the title <br>
+                                                <strong style="color: black;">By:</strong> Amin Doostmohammadi <br>
+                                                <strong style="color: black;">From: </strong> University of Copenhagen<br> the abstract of the this talk te abstract of the this talk te abstract of the this talk te abstract of the this talk te abstract
+                                                of the this talk this is some text, activated with the overlay button this is some text, activated with the overlay button this is some text, activated with the overlay button
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
 
@@ -501,6 +516,23 @@
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <script>
+            // This part isnt needed but I added it in case you wanted it
+
+            // Get the modals
+            var modal = document.getElementById('id01');
+            var modal2 = document.getElementById('id02');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
             }
         </script>
 </body>
