@@ -209,10 +209,17 @@
                                         <div class="container">
                                             <span onclick="document.getElementById('invSp03').style.display='none'" class="closebtn">&times;</span>
                                             <div class="container">
-                                                <strong style="color: black;">Title:  </strong> TBA <br>
+                                                <strong style="color: black;">Title:  </strong> Taming Active Matter: from ordered topological defects to autonomous shells<br>
                                                 <strong style="color: black;">By:</strong> Amin Doostmohammadi <br>
                                                 <strong style="color: black;">From: </strong> University of Copenhagen<br> 
-                                                <strong style="color: black;">Abstract: </strong> TBA
+                                                <strong style="color: black;">Abstract: </strong> The spontaneous emergence of collective flows is a generic property of active fluids and often leads to chaotic flow patterns characterized by swirls, jets, and topological 
+
+                                                disclinations in their orientation field. I will first discuss two examples of these collective features helping us understand biological processes: 
+                                                
+                                                (i) to explain the tortoise & hare story in bacterial competition: how motility of Pseudomonas aeruginosa bacteria leads to a slower invasion of bacteria colonies, which are individually faster, and 
+                                                (ii) how self-propelled defects lead to finding an unanticipated mechanism for cell death. 
+                                                I will then discuss various strategies to tame, otherwise chaotic, active flows, showing how hydrodynamic screening of active flows can act as a robust way of controlling and guiding active particles
+                                                 into dynamically ordered coherent structures. I will also explain how combining hydrodynamics with topological constraints can lead to further control of exotic morphologies of active shells.
                                             </div>
                                         </div>
                                     </div>
@@ -338,7 +345,7 @@
                                         <div class="container">
                                             <span onclick="document.getElementById('invSp09').style.display='none'" class="closebtn">&times;</span>
                                             <div class="container">
-                                                <strong style="color: black;">Title:  </strong> TBA <br>
+                                                <strong style="color: black;">Title:  </strong> The Neurobiology of Aesthetic Experiences - from visual to mathematical beauty <br>
                                                 <strong style="color: black;">By:</strong> Semir Zeki <br>
                                                 <strong style="color: black;">From: </strong> University College London<br> 
                                                 <strong style="color: black;">Abstract: </strong> TBA
@@ -347,6 +354,30 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
+                            <div class="3u 3u(medium) 4u(small)">
+                                <span class="image" style="cursor:pointer" onclick="document.getElementById('invSp10').style.display='block'"><img src="images/rasing.jpg" alt ></span>
+                                <h4><a href="https://www.ucl.ac.uk/biosciences/people/semir-zeki">Theo Rasing </a></h4>
+                                <p>Radboud University Nijmegen</p>
+                                <div id="invSp10" class="modal" onclick="off()">
+                                    <div class="modal-content">
+                                        <div class="container">
+                                            <span onclick="document.getElementById('invSp10').style.display='none'" class="closebtn">&times;</span>
+                                            <div class="container">
+                                                <strong style="color: black;">Title:  </strong> TBA <br>
+                                                <strong style="color: black;">By:</strong> Theo Rasing <br>
+                                                <strong style="color: black;">From: </strong> Radboud University Nijmegen<br> 
+                                                <strong style="color: black;">Abstract: </strong> TBA
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
 
                             <!-- <div class="3u 3u(medium) 4u(small)">
                                 <span class="image"><img src="images/invit.png" alt ></span>
@@ -652,6 +683,7 @@
             var modal7 = document.getElementById('invSp07');
             var modal8 = document.getElementById('invSp08');
             var modal9 = document.getElementById('invSp09');
+            var modal10 = document.getElementById('invSp10');
 
 
             // When the user clicks anywhere outside of the modal, close it
@@ -683,6 +715,9 @@
                 }
                 if (event.target == modal9) {
                     modal9.style.display = "none";
+                }
+                if (event.target == modal10) {
+                    modal10.style.display = "none";
                 }
             }
         </script>
