@@ -17,6 +17,9 @@
 	</head>
 
 	<body>
+
+
+
     	<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"
             style="font-size:24px;"></i> </button>
 
@@ -73,6 +76,12 @@
 							    <div class="inner">
 									<!-- <h2><p>Titles and Abstracts will be uploaded here.</p></h2> -->
 									<div class="card" data-city="afshordi">
+										<div>
+											<button style="width: 33%;  background-color: #555;" onclick="window.location.href='./01-poster.html';" title="previous"><i class="fa fa-angle-double-left" style="font-size:24px;"></i> previous</button>
+											<button style="width: 33%;  background-color: #555;" onclick="window.location.href='../posters.html';" title="Go to posters">list of posters </button>
+											<button style="width: 33%;  background-color: #555;" onclick="window.location.href='./03-poster.html';" title="next">next <i class="fa fa-angle-double-right" style="font-size:24px;"></i>  </button>
+										</div>
+										<br>
 										<h2 >Poster Title1</h2>
 										<b>Lastname, Firstname; Lastname, Firstname;</b> <br> 
 										<br>
@@ -90,6 +99,11 @@
 											
 										</span>	
 											<center> <img width="100%" src="./posterTemp-fa-1.png"> </center>
+											<div>
+												<button style="width: 33%;  background-color: #555;" onclick="window.location.href='./01-poster.html';" title="previous"><i class="fa fa-angle-double-left" style="font-size:24px;"></i> previous</button>
+												<button style="width: 33%;  background-color: #555;" onclick="window.location.href='../posters.html';" title="Go to posters">list of posters </button>
+												<button style="width: 33%;  background-color: #555;" onclick="window.location.href='./03-poster.html';" title="next">next <i class="fa fa-angle-double-right" style="font-size:24px;"></i>  </button>
+											</div>
 										<hr>
 									</div>
 
@@ -137,10 +151,13 @@
 			<script>
 				//Get the button
 				var mybutton = document.getElementById("myBtn");
+				var mybutton1 = document.getElementById("myBtn1");
 		
 				// When the user scrolls down 20px from the top of the document, show the button
 				window.onscroll = function () {
 					scrollFunction()
+					// scrollFunction1()
+
 				};
 		
 				function scrollFunction() {
@@ -151,6 +168,14 @@
 					}
 				}
 		
+				function scrollFunction1() {
+					if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+						mybutton1.style.display = "block";
+					} else {
+						mybutton1.style.display = "none";
+					}
+				}
+
 				// When the user clicks on the button, scroll to the top of the document
 				function topFunction() {
 					document.body.scrollTop = 0;
