@@ -3284,7 +3284,7 @@ body.is-loading #banner p {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1920px) {
     #wrapper>header {
         padding: 9em 0 6.25em 0;
         background-color: #4e0000;
